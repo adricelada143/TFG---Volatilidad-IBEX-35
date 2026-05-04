@@ -1,8 +1,3 @@
-# ── Datos grandes (generados por los notebooks) ─────────────────────────────
-data/db/*.db
-data/processed/dataset_maestro.csv
-data/processed/precios_empresas.csv
-
 # ── Datos brutos originales (no subir por tamaño/confidencialidad) ───────────
 # Los datos de Refinitiv/Reuters no se redistribuyen
 # data/raw/   <- descomenta si añades carpeta raw
