@@ -8,10 +8,14 @@ import pandas as pd
 import streamlit as st
 
 # ── Rutas ─────────────────────────────────────────────────────────────────────
-BASE = os.path.expanduser(
-    '~/Library/Mobile Documents/com~apple~CloudDocs/'
-    'UFV/UNIVERSIDAD FRANCISCO DE VITORIA/4\u00ba/TFG')
-DB_PATH = os.path.join(BASE, 'proyecto', 'data', 'db', 'tfg.db')
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+DB_PATH = os.path.join(REPO_ROOT, 'data', 'db', 'tfg.db')
+
+if not os.path.exists(DB_PATH):
+    raise FileNotFoundError(
+        f"No se encuentra la base de datos SQLite en {DB_PATH}. "
+        "Asegúrate de que el archivo data/db/tfg.db está en el repositorio."
+    )
 
 
 @st.cache_data(ttl=3600)
