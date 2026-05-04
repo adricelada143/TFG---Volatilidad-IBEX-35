@@ -20,7 +20,14 @@ Este TFG analiza el impacto de las variables macroeconómicas en la volatilidad 
 
 ## 🚀 Cómo ejecutar el Dashboard
 
-### Requisitos Previos
+### Opción 1: Acceso Online (Recomendado para tu Profesor)
+
+**Tu profesor puede acceder directamente sin instalar nada:**
+```
+[Enlace a Streamlit Cloud - próximamente disponible]
+```
+
+### Opción 2: Instalación Local
 - Python 3.10+
 - pip o conda
 
